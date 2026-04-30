@@ -8,14 +8,51 @@
 </head>
 <body class="bg-slate-100 p-4 md:p-10 font-sans">
 
-  <div class="max-w-3xl mx-auto space-y-4">
+  
     
-    <details class="bg-[#005a8f] text-white rounded shadow" open>
-      <summary class="p-3 font-bold cursor-pointer outline-none">ENUNCIADO</summary>
+    <details>
+      <summary class="p-3 font-bold  bg-[#005a8f] text-white cursor-pointer outline-none">ENUNCIADO</summary>
+              <p>Responde los datos del formulario y termina la función <code>Calcular()</code> de manera que al hacer clic en el botón, aparezca el siguiente texto en el párrafo con id <code>totalGastos</code>:</p>
+      <p class="font-mono text-center">
+        "<mark>Nombre Apellidos</mark>: Tu gasto fijo total es de <mark>total</mark> euros."
+      </p>
+      <p>Ejemplo:</p>
+      <p class="font-mono text-center">
+        <strong>Pepito Pérez Rojas</strong>: Tu gasto fijo total es de <strong>450</strong> euros."
+      </p>
+    
+      
     </details>
 
     <details class="border-2 border-[#005a8f] bg-white rounded shadow">
       <summary class="p-3 font-bold text-[#005a8f] cursor-pointer outline-none">Tipos de Datos en JavaScript</summary>
+      <div class="flex flex-row">
+      <div class="flex-1 border-1">
+        <p class="px-4 py-2">
+          <strong>Primitivos:</strong> Se accede directamente al valor. Para saber el tipo de datos de una variable se usa <a class="text-blue-600" href="https://www.aprendejavascript.dev/clase/introduccion/operador-typeof" target="_blank" rel="noopener noreferrer"><code>typeof</code></a>
+        </p>
+        <ul class="[list-style-type:circle] list-outside ml-8 mb-3">
+        <li><strong>string</strong>: Cadena de Texto. Se convierte a número con la función <code>Number</code>.</li>
+        <li><strong>number</strong>: Valor numérico</li>
+        <li><strong>bigint</strong>: Números enteros mayores a 9007199254740991<br>(2<sup>53</sup> - 1). Se representan añadiendo una <strong>n</strong> al final del número.</li>
+        <li><strong>boolean</strong>: Valor lógico Verdadero/Falso. (ver <a class="text-blue-600" href="https://lenguajejs.com/javascript/tipos/falsy-truthy/" target="_blank" rel="noopener noreferrer">Falsy y Truthy</a>)</li>
+        <li><strong>null</strong>: La variable tiene como valor, <strong>vacío</strong>.</li>
+        <li><strong>undefined</strong>: La variable ha sido declarada pero no tiene valor.</li>
+        <li><strong>NaN</strong>: Not a Number (no es un número)</li>
+        </ul>
+      </div>
+      <div class="flex-1 border-1">
+        <p class="px-4 py-2">
+          <strong>Compuestos:</strong> Se accede a la referencia del valor. La variable no guarda los datos, guarda la "ubicación" en la memoria donde están esos datos. Si dos variables apuntan a la misma dirección y una cambia algo, la otra también lo verá cambiado. Para saber el tipo de objeto que se está trabajando se utiliza <a class="text-blue-600" href="https://es.javascript.info/instanceof" target="_blank" rel="noopener noreferrer"><code>instanceof</code></a>.
+        </p>
+        <ul class="[list-style-type:circle] list-outside ml-8 mb-3">
+          <li><strong>object</strong>: {...} Es una colección de clave: valor.</li>
+          <li><strong>array</strong>: [...] Guardan listas de valores los cuales referenciamos por un índice numérico.</li>
+          <li><strong>function()</strong>: {...} Guardan un bloque de código para ejecutarlo al ser invocado.</li>
+          <li><strong>Class</strong>: {...} Plantillas que permiten crear muchos objetos con la misma estructura y comportamiento</li>
+        </ul>
+      </div>
+    </div>
     </details>
 
     <div class="bg-[#f1f3f6] p-8 rounded-3xl shadow-lg border border-slate-200">
